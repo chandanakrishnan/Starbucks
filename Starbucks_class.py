@@ -41,7 +41,50 @@ class Starbucks():
         temperature_coffee = str(input("What is the temperature of coffee that you want?"))
         return type_coffee, size_coffee, temperature_coffee
     def final_price(self):
-        #TO DO: calculate the price according to the request, temperature and size
+        coffee = self.type 
+        temperature = self.temp
+        size = self.size
+        #TO DO: #  calculate the price according to the request, temperature and size
+        if(coffee=='iced caramel brulee latte' and temperature=='hot'and size=='S'):
+            print("Final price = $5.5")
+        elif (coffee=='iced caramel brulee latte'and temperature=='hot' and size=='M'):
+            print("Final price = $6.5")
+        elif(coffee=='iced caramel brulee latte'and temperature=='hot' and size=='L'):
+            print("Final price = $7.5")
+        elif(coffee=='iced caramel brulee latte' and temperature=='cold'and size=='S'):
+            print("Final price = $5")
+        elif (coffee=='iced caramel brulee latte'and temperature=='cold' and size=='M'):
+            print("Final price = $6")
+        elif(coffee=='iced caramel brulee latte'and temperature=='cold' and size=='L'):
+            print("Final price = $7")
+
+#matcha latte
+        if(coffee=='matcha latte' and temperature=='hot'and size=='S'):
+         print("Final price = $5.5")
+        elif (coffee=='matcha latte'and temperature=='hot' and size=='M'):
+         print("Final price = $6.5")
+        elif(coffee=='matcha latte'and temperature=='hot' and size=='L'):
+         print("Final price = $7.5")
+        elif(coffee=='matcha latte' and temperature=='cold'and size=='S'):
+         print("Final price = $5")
+        elif (coffee=='matcha latte'and temperature=='cold' and size=='M'):
+         print("Final price = $6")
+        elif(coffee=='matcha latte'and temperature=='cold' and size=='L'):
+         print("Final price = $7")
+
+#cappucino
+        if(coffee=='cappucino' and temperature=='hot'and size=='S'):
+         print("Final price = $5.5")
+        elif (coffee=='cappucino'and temperature=='hot' and size=='M'):
+         print("Final price = $6.5")
+        elif(coffee=='cappucino'and temperature=='hot' and size=='L'):
+         print("Final price = $7.5")
+        elif(coffee=='cappucino' and temperature=='cold'and size=='S'):
+         print("Final price = $5")
+        elif (coffee=='cappucino'and temperature=='cold' and size=='M'):
+         print("Final price = $6")
+        elif(coffee=='cappucino'and temperature=='cold' and size=='L'):
+         print("Final price = $7")
         return 1
 
     def display(self):
@@ -56,6 +99,7 @@ if __name__ =='__main__' :
     #starbucks = Starbucks("cold","large","latte")
     starbucks = Starbucks()
     starbucks.display()
+    starbucks.final_price()
 
 
 
