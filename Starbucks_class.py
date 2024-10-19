@@ -5,10 +5,12 @@ class Starbucks():
     size = "Large"
     type = "Latte"
     #Constructor 
-    def __init__(self,New_temp,New_size,New_type):
-        self.temp = New_temp
-        self.size = New_size
-        self.type = New_type
+    def __init__(self):
+        self.type, self.size, self.temp = self.user_request()
+    # def __init__(self,New_temp,New_size,New_type):
+    #     self.temp = New_temp
+    #     self.size = New_size
+    #     self.type = New_type
     #gets and sets
     def get_temp(self):
         return self.temp
@@ -32,6 +34,16 @@ class Starbucks():
         return prize
     def print_total(self):
         total = ("total :",self.print_total)
+
+    def user_request(self):
+        type_coffee = str(input("What is the type of coffee that you want?"))
+        size_coffee = str(input("What is the size of coffee that you want?"))
+        temperature_coffee = str(input("What is the temperature of coffee that you want?"))
+        return type_coffee, size_coffee, temperature_coffee
+    def final_price(self):
+        #TO DO: calculate the price according to the request, temperature and size
+        return 1
+
     def display(self):
         print("****************")
         print("temp: ", self.temp)
@@ -39,10 +51,11 @@ class Starbucks():
         print("type: ", self.type)
     
     
-    #Main
-    if __name__ =='__main__' :
-        starbucks = Starbucks("cold","large","latte")
-        starbucks.display()
+#Main
+if __name__ =='__main__' :
+    #starbucks = Starbucks("cold","large","latte")
+    starbucks = Starbucks()
+    starbucks.display()
 
 
 
